@@ -58,6 +58,9 @@ public class stepDefinition extends Utils {
 		APIResources resourceAPI=APIResources.valueOf(resource);
 		System.out.println(resourceAPI.getResource());
 		
+		
+		System.out.println("git.............");
+		
 		ResponseSpecification= new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON). build();
 		   if(method.equals("POST")){
 		      response=res.when()
